@@ -18,9 +18,9 @@
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
-    --normal-font-size: 938rem;
-    --small-font-size: 813rem;
-    --smaller-font-size: 75rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
 
     
     --font-regular: 400;
@@ -42,8 +42,8 @@
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
-    --small-font-size: 875rem;
-    --smaller-font-size: 813rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
         }
         
     }
@@ -142,9 +142,36 @@ svg {
     overflow: hidden; /*for animations scrollrevels*/
 }
 
+/*=========== HEADER & NAV============*/
 
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--container-color);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
 }
 
+.nav {
+    height: var(--header-heigth);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo span {
+    color: var(--first-color);
+}
+
+
+
+}
 
 
 
