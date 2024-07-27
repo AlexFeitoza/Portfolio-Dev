@@ -131,7 +131,7 @@ svg {
 
 .section__subtitle {
     font-size: var(--small-font-size);
-    margin-bottom: 25rem;
+    margin-bottom: .25rem;
 }
 
 .section__subtitle span {
@@ -166,11 +166,32 @@ svg {
 }
 
 .nav__logo span {
-    color: var(--first-color);
+    color: rgb(76, 211, 184);
+}
+
+.nav__toggle,
+.nav__close {
+    display: flex;
+    font-size: 1.25rem;
+    color: var(--title-color);
+    cursor: pointer;
 }
 
 
-
+/* navigation for mobile devices */
+@media screen and (max-width: 1023px){
+    .nav__menu {
+        position: fixed;
+        right: 0;
+        background-color: hsla(0, 0%, 10%, .3);
+        width: 75%;
+        height: 100%;
+        padding: 4.5rem 0 0 3rem;
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px); /* for safari */
+        transition: right .4s;
+    }
+}
 }
 
 
