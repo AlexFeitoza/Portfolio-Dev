@@ -4,12 +4,12 @@
     --header-heigth: 3.5rem
 
     --hue: 162;
-    --first-color: hsl(var(--hue), 100%, 40%);
+    --first-color: rgb(76, 211, 184);
     --first-color-alt: hsl(var(--hue), 56%, 35%);
     --title-color: hsl(228, 8%, 95%);
     --text-color: hsl(228, 8%, 65%);
     --body-color: hsl(228, 15%, 20%);
-    --container-color: hsl(228, 15%, 15%);
+    --container-color: rgb(26, 32, 40);
 
 
     --body-font: "Poppins", sans-serif;
@@ -76,12 +76,11 @@ body {
 }
 
 input,
-textarea, 
+textarea,
 button {
     outline: none;
     border: none;
 }
-
 
 h1,h2,h3,h4 {
     color: var(--title-color);
@@ -93,7 +92,7 @@ ul {
 }
 
 a {
-    text-decoration: none;               ;
+    text-decoration: none;
 }
 
 img,
@@ -101,8 +100,6 @@ svg {
     max-width: 100%;
     height: auto;
 }
-
-/*===========reusable css classes ==============*/
 
 .container {
     max-width: 1120px;
@@ -140,10 +137,11 @@ svg {
 }
 
 .main {
-    overflow: hidden; /*for animations scrollrevels*/
+    overflow: hidden; 
 }
 
-/*=========== HEADER & NAV============*/
+
+/*=============== HEADER & NAV================*/
 
 .header {
     position: fixed;
@@ -154,7 +152,9 @@ svg {
     z-index: var(--z-fixed);
 }
 
-.nav {
+
+.nav__container {
+    background-color: var(--container-color);
     height: var(--header-heigth);
     display: flex;
     justify-content: space-between;
@@ -167,66 +167,8 @@ svg {
 }
 
 .nav__logo span {
-    color: rgb(76, 211, 184);
+    color: var(--first-color);
 }
-
-.nav__toggle,
-.nav__close {
-    display: flex;
-    font-size: 1.25rem;
-    color: var(--title-color);
-    cursor: pointer;
-}
-
-
-/* navigation for mobile devices */
-@media screen and (max-width: 1023px){
-    .nav__menu {
-        position: fixed;
-        right: 0;
-        background-color: hsla(0, 0%, 10%, .3);
-        width: 75%;
-        height: 100%;
-        padding: 4.5rem 0 0 3rem;
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px); /* for safari */
-        transition: right .4s;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
